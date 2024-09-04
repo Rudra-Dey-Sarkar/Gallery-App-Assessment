@@ -1,0 +1,217 @@
+.features {
+    background-color: #363C43;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#qmark:hover{
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 10px 10px 36px 20px black;
+}
+#dot:hover{
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 10px 10px 36px 20px black;
+}
+
+
+.FeatureNavSide {
+    display: grid;
+    width: fit-content;
+    padding: 5px;
+}
+
+.FeatureNavTop {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    background-color:#171717;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 5px 20px 5px 20px;
+    border-radius : 20px;
+}
+
+#abt-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #363C43;
+}
+#abt-btn p{
+    width: fit-content;
+    height: fit-content;
+    color:whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#abt-btn:hover {
+   cursor: pointer;
+   box-shadow: 10px 10px 36px 20px black;
+}
+
+#exp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #363C43;
+    color:whitesmoke;
+    font-weight: 600;
+}
+#exp-btn:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 36px 20px black;
+}
+#exp-btn p{
+    width: fit-content;
+    height: fit-content;
+    color:whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#rec-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    background-color: #363C43;
+    color: whitesmoke;
+    font-weight: 600;
+}
+#rec-btn p{
+    width: fit-content;
+    height: fit-content;
+    color:whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#rec-btn:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 36px 20px black;
+}
+.tabs {
+    width: 40vw;
+    height: 30vh; /* Set a fixed height */
+    margin: 5px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#abt-tab{
+    color:whitesmoke;
+}
+
+
+
+#exp-tab{
+    display: none;
+}
+#exp-tab{
+    flex-direction: column;
+}
+#add-exp-btn{
+    color: whitesmoke;
+    font-weight:600;
+    border:2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top:20px
+}
+#add-exp-btn:hover{
+    cursor:pointer;
+}
+#exp-input{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    max-height: 50px;
+    max-width: 160px;
+    overflow-y: auto;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+#exp-input::placeholder{
+font-size: 1rem;
+}
+#exp-tab p{
+    font-size: 1srem;
+    color: whitesmoke;
+}
+
+
+#rec-tab{
+    display: none;
+}
+#rec-tab{
+    flex-direction: column;
+}
+#add-rec-btn{
+    color: whitesmoke;
+    font-weight:600;
+    border:2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top:20px
+}
+#add-rec-btn:hover{
+    cursor:pointer;
+}
+#rec-input{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    max-height: 50px;
+    max-width: 160px;
+    overflow-y: auto;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+#rec-input::placeholder{
+font-size: 1rem;
+}
+#rec-tab p{
+    font-size: 1srem;
+    color: whitesmoke;
+}
+
+
+@media(max-width:1250px){
+.FeatureNavTop{
+ display: grid;
+}
+#abt-btn{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+#exp-btn{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+#rec-btn{
+    margin-right: 0;
+}
+}
+
+@media(max-width:770px){
+.tabs{
+    width: 90%;
+}
+}
