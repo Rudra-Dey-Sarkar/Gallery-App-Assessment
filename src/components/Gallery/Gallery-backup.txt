@@ -1,0 +1,63 @@
+import React, { useState, useRef } from 'react'
+import "./Gallery.css"
+import { LeftArrow, RightArrow, QuestionMark, Dots } from "../Icons/Icons"
+function Gallery() {
+    const fileInputRef = useRef(null);
+    const [images, setImages] = useState(null);
+    const [allImages] = useState([])
+    
+    const handleClick = () => {
+        fileInputRef.current.click();
+    };
+    
+    function ImageInsert(data){
+    let top = allImages.length;
+    allImages[top]=data;
+    top++;
+    }
+
+    const handleFileChange = (event) => {
+        const files = event.target.files[0];
+        const objURL = URL.createObjectURL(files)
+        ImageInsert(objURL);
+        setImages(objURL);
+    };
+
+    return (
+        <div className='gallery'>
+
+            <div className='navSide'>
+                <QuestionMark />
+                <Dots />
+            </div>
+
+            <div className='nav-body'>
+                <div className='navTop'>
+                    <p id='galButton'>Gallery</p>
+                    <div id='buttonCombine'>
+                        <div id='add' onClick={handleClick}>+ ADD IMAGE</div>
+                        <input
+                            type="file"
+                            ref={fileInputRef}
+                            style={{ display: 'none' }}
+                            onChange={handleFileChange}
+                            accept="image/*"
+                        />
+                        <LeftArrow id='prevButton' />
+                        <RightArrow id='nextButton' />
+                    </div>
+                </div>
+                
+                <div className='photos'>
+               <button onClick={()=>console.log(allImages)}>check</button>
+  
+                        <img src={allImages}/>
+    
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default Gallery
