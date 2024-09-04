@@ -29,7 +29,7 @@ function Features() {
                 <Dots id="dot"/>
             </div>
 
-            <div className="nav-body">
+            <div className="features-nav-body">
                 <div className='FeatureNavTop'>
                     <div id="abt-btn" onClick={(e)=>Tabs(e.target.id)}><p>About Me</p></div>
                     <div id="exp-btn" onClick={(e)=>Tabs(e.target.id)}><p>Experiences</p></div>
